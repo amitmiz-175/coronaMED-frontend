@@ -48,8 +48,39 @@
         placeholder="Birth day"
         defaultValue="2014-04-30"
       ></f7-list-input>
+      </f7-list>
 
+      <f7-block-title>Background Diseases</f7-block-title>
+    <f7-list>
       <f7-list-item
+        checkbox
+        name="my-checkbox"
+        value="Cancer"
+        title="Cancer"
+      ></f7-list-item>
+      <f7-list-item
+        checkbox
+        name="my-checkbox"
+        value="Diabetes"
+        title="Diabetes"
+      ></f7-list-item>
+      <f7-list-item
+        checkbox
+        name="my-checkbox"
+        value="Asthma"
+        title="Asthma"
+      ></f7-list-item>
+      <f7-list-input
+        label="Other"
+        type="other"
+        placeholder="Other"
+      ></f7-list-input>
+    </f7-list>
+    <f7-row tag="p">
+      <f7-button @click="submit" class="col" large fill raised>Submit</f7-button>
+    </f7-row>
+
+      <!-- <f7-list-item
         title="Toggle"
       >
         <f7-toggle slot="after"></f7-toggle>
@@ -153,6 +184,59 @@
         value="Food"
         title="Food"
       ></f7-list-item>
-    </f7-list>
+    </f7-list> -->
   </f7-page>
 </template>
+
+<script>
+import { Device }  from '../js/framework7-custom.js';
+  import cordovaApp from '../js/cordova-app.js';
+  import routes from '../js/routes.js';
+
+  export default {
+    data() {
+      return {
+        // Framework7 Parameters
+        f7params: {
+          id: 'com.amitmiz.coronaMED', // App bundle ID
+          name: 'CoronaMED', // App name
+          theme: 'auto', // Automatic theme detection
+
+
+          // App routes
+          routes: routes,
+
+
+          // Input settings
+          input: {
+            scrollIntoViewOnFocus: Device.cordova && !Device.electron,
+            scrollIntoViewCentered: Device.cordova && !Device.electron,
+          },
+          // Cordova Statusbar settings
+          statusbar: {
+            iosOverlaysWebView: true,
+            androidOverlaysWebView: false,
+          },
+        },
+
+        // Login screen data
+        username: '',
+        password: '',
+      }
+    },
+    methods: {
+      submit() {
+        this.$f7.dialog.alert('Thank you for your information!');
+      }
+    },
+    mounted() {
+      this.$f7ready((f7) => {
+        // Init cordova APIs (see cordova-app.js)
+        if (Device.cordova) {
+          cordovaApp.init(f7);
+        }
+        // Call F7 APIs here
+      });
+    }
+  }
+</script>
