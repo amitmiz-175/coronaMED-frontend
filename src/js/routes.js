@@ -22,10 +22,10 @@ var routes = [
     path: '/form/',
     component: FormPage,
   },
-  {
-    path: '/daily-status/',
-    component: DailyStatusPage,
-  },
+  // {
+  //   path: '/daily-status/',
+  //   component: DailyStatusPage,
+  // },
   {
     path: '/left-page-1/',
     component: LeftPage1,

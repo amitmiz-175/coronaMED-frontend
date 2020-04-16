@@ -20,13 +20,13 @@
       </f7-page>
     </f7-view>
   </f7-panel>
-
-
+  
+  
   <!-- Right panel with reveal effect-->
   <f7-panel right reveal theme-dark>
     <f7-view>
       <f7-page>
-        <f7-navbar title="Right Panel"></f7-navbar>
+        <f7-navbar title="Right panel"></f7-navbar>
         <f7-block>Right panel content goes here</f7-block>
       </f7-page>
     </f7-view>
