@@ -1,8 +1,8 @@
 <template>
-  <f7-page name="form">
-    <f7-navbar title="Form" back-link="Back"></f7-navbar>
+  <f7-page name="Detailes">
+    <f7-navbar title="Personal Detailes" back-link="Back"></f7-navbar>
 
-    <f7-block-title>Form Example</f7-block-title>
+    <f7-block-title>Dry Detailes</f7-block-title>
     <f7-list no-hairlines-md>
       <f7-list-input
         label="Name"
@@ -72,7 +72,7 @@
       ></f7-list-item>
       <f7-list-input
         label="Other"
-        type="other"
+        type="text"
         placeholder="Other"
       ></f7-list-input>
     </f7-list>
