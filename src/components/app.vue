@@ -5,28 +5,29 @@
   <f7-panel left cover theme-dark :visible-breakpoint="960">
     <f7-view>
       <f7-page>
-        <f7-navbar title="Left Panel"></f7-navbar>
-        <f7-block-title>Left View Navigation</f7-block-title>
+        <!-- <f7-navbar title="Left Panel"></f7-navbar>
+        <f7-block-title>Left View Navigation</f7-block-title> -->
         <f7-list>
-          <f7-list-item link="/left-page-1/" title="Left Page 1"></f7-list-item>
-          <f7-list-item link="/left-page-2/" title="Left Page 2"></f7-list-item>
+          <!-- <f7-list-item link="/left-page-1/" title="Left Page 1"></f7-list-item>
+          <f7-list-item link="/left-page-2/" title="Left Page 2"></f7-list-item> -->
         </f7-list>
         <f7-block-title>Control Main View</f7-block-title>
         <f7-list>
           <f7-list-item link="/about/" view=".view-main" panel-close title="About"></f7-list-item>
           <f7-list-item link="/form/" view=".view-main" panel-close title="Form"></f7-list-item>
+          <f7-list-item link="/daily-status/" view=".view-main" panel-close title="Daily"></f7-list-item>
           <f7-list-item link="#" view=".view-main" back panel-close title="Back in history"></f7-list-item>
         </f7-list>
       </f7-page>
     </f7-view>
   </f7-panel>
-
-
+  
+  
   <!-- Right panel with reveal effect-->
   <f7-panel right reveal theme-dark>
     <f7-view>
       <f7-page>
-        <f7-navbar title="Right Panel"></f7-navbar>
+        <f7-navbar title="Right panel"></f7-navbar>
         <f7-block>Right panel content goes here</f7-block>
       </f7-page>
     </f7-view>
