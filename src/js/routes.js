@@ -2,6 +2,7 @@
 import HomePage from '../pages/home.vue';
 import AboutPage from '../pages/about.vue';
 import FormPage from '../pages/form.vue';
+import DailyStatusPage from '../pages/daily-status.vue';
 
 import LeftPage1 from '../pages/left-page-1.vue';
 import LeftPage2 from '../pages/left-page-2.vue';
@@ -22,10 +23,10 @@ var routes = [
     path: '/form/',
     component: FormPage,
   },
-  // {
-  //   path: '/daily-status/',
-  //   component: DailyStatusPage,
-  // },
+  {
+    path: '/daily-status/',
+    component: DailyStatusPage,
+  },
   {
     path: '/left-page-1/',
     component: LeftPage1,
