@@ -12,10 +12,10 @@
       <f7-nav-title-large sliding>CoronaMED</f7-nav-title-large>
     </f7-navbar>
     <!-- Toolbar-->
-    <f7-toolbar bottom>
+    <!-- <f7-toolbar bottom>
       <f7-link>Left Link</f7-link>
       <f7-link>Right Link</f7-link>
-    </f7-toolbar>
+    </f7-toolbar> -->
     <!-- Page content-->
     <!-- <f7-block strong>
       <p>This is an example of split view application layout, commonly used on tablets. The main approach of such kind of layout is that you can see different views at the same time.</p>
