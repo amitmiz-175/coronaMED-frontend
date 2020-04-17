@@ -1,14 +1,16 @@
 <template>
   <f7-page name="daily status">
     <f7-navbar title="Daily Status" back-link="Back"></f7-navbar>
-
+    <f7-icon f7="heart"></f7-icon>
     <f7-list-input
         label="Pulse"
         :input="false"
       >
+        
         <f7-range slot="input" :value="120" :min="0" :max="200" :step="1"></f7-range>
     </f7-list-input>
-
+    
+    <f7-icon f7="eyedropper"></f7-icon>
     <f7-list-input
         label="Fever"
         :input="false"
@@ -20,6 +22,7 @@
       <f7-button @click="submit" class="col" large fill raised>Submit</f7-button>
     </f7-row>
 
+    <f7-icon f7="wind"></f7-icon>
     <f7-block-title>Cough</f7-block-title>
     <f7-list>
       <f7-list-item
