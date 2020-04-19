@@ -1,6 +1,6 @@
 <template>
   <f7-page name="Detailes">
-    <f7-navbar title="Personal Detailes" back-link="Back"></f7-navbar>
+    <f7-navbar title="Registration" back-link="Back"></f7-navbar>
 
     <f7-block-title>Dry Detailes</f7-block-title>
     <f7-list no-hairlines-md>
