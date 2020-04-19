@@ -10,7 +10,9 @@
         <f7-link icon-ios="f7:menu" icon-aurora="f7:menu" icon-md="material:menu" panel-open="right"></f7-link>
       </f7-nav-right> -->
       <!-- <f7-nav-title-large sliding>CoronaMED</f7-nav-title-large> -->
-      <img src='static/coronaMEDTitle.jpg' height="120" width="200">
+      <f7-nav-title-large sliding>
+        <img src='static/coronaMEDTitle.jpeg' height="45" width="155">
+      </f7-nav-title-large>
     </f7-navbar>
     <!-- Toolbar-->
     <!-- <f7-toolbar bottom>
