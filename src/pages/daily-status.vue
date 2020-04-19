@@ -1,6 +1,6 @@
 <template>
   <f7-page name="daily status">
-    <f7-navbar title="Daily Status" back-link="Back"></f7-navbar>
+    <f7-navbar title="Follow-Up" back-link="Back"></f7-navbar>
 
     <f7-block-title>Vitals</f7-block-title>
     <f7-list>
@@ -62,6 +62,12 @@
         name="radio"
         value="Heavy Cough"
         title="Heavy Cough"
+      ></f7-list-item>
+      <f7-list-item
+        radio
+        name="radio"
+        value="Dry Cough"
+        title="Dry Cough"
       ></f7-list-item>
     </f7-list>
 

@@ -29,8 +29,8 @@
     <f7-block-title>Navigation</f7-block-title>
     <f7-list>
       <f7-list-item link="/about/" title="About"></f7-list-item>
-      <f7-list-item link="/form/" title="Form"></f7-list-item>
-       <f7-list-item link="/daily-status/" title="Daily Status"></f7-list-item>
+      <f7-list-item link="/form/" title="Registration"></f7-list-item>
+       <f7-list-item link="/daily-status/" title="Follow-Up"></f7-list-item>
     </f7-list>
 
     <!-- <f7-block-title>Modals</f7-block-title> -->

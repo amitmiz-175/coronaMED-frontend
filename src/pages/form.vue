@@ -17,12 +17,6 @@
       ></f7-list-input>
 
       <f7-list-input
-        label="URL"
-        type="url"
-        placeholder="URL"
-      ></f7-list-input>
-
-      <f7-list-input
         label="Password"
         type="password"
         placeholder="Password"
@@ -55,8 +49,8 @@
       <f7-list-item
         checkbox
         name="my-checkbox"
-        value="Cancer"
-        title="Cancer"
+        value="Lung Cancer"
+        title="Lung Cancer"
       ></f7-list-item>
       <f7-list-item
         checkbox
@@ -73,7 +67,6 @@
       <f7-list-input
         label="Other"
         type="text"
-        placeholder="Other"
       ></f7-list-input>
     </f7-list>
     <f7-row tag="p">

@@ -5,40 +5,40 @@
   <f7-panel left cover theme-dark :visible-breakpoint="960">
     <f7-view>
       <f7-page>
-        <!-- <f7-navbar title="Left Panel"></f7-navbar>
-        <f7-block-title>Left View Navigation</f7-block-title> -->
-        <f7-list>
-          <!-- <f7-list-item link="/left-page-1/" title="Left Page 1"></f7-list-item>
-          <f7-list-item link="/left-page-2/" title="Left Page 2"></f7-list-item> -->
-        </f7-list>
-        <f7-block-title>Control Main View</f7-block-title>
+        <f7-navbar title="Menu"></f7-navbar>
+        <!-- <f7-block-title>Left View Navigation</f7-block-title> -->
+        <!-- <f7-list>
+          <f7-list-item link="/left-page-1/" title="Left Page 1"></f7-list-item>
+          <f7-list-item link="/left-page-2/" title="Left Page 2"></f7-list-item>
+        </f7-list> -->
+        <!-- <f7-block-title>Control Main View</f7-block-title> -->
         <f7-list>
           <f7-list-item link="/about/" view=".view-main" panel-close title="About"></f7-list-item>
-          <f7-list-item link="/form/" view=".view-main" panel-close title="Form"></f7-list-item>
-          <f7-list-item link="/daily-status/" view=".view-main" panel-close title="Daily"></f7-list-item>
-          <f7-list-item link="#" view=".view-main" back panel-close title="Back in history"></f7-list-item>
+          <f7-list-item link="/form/" view=".view-main" panel-close title="Registration"></f7-list-item>
+          <f7-list-item link="/daily-status/" view=".view-main" panel-close title="Follow-up"></f7-list-item>
+          <!-- <f7-list-item link="#" view=".view-main" back panel-close title="Back in history"></f7-list-item> -->
         </f7-list>
       </f7-page>
     </f7-view>
   </f7-panel>
   
   
-  <!-- Right panel with reveal effect-->
-  <f7-panel right reveal theme-dark>
+  <!-- Right panel with reveal effect -->
+  <!-- <f7-panel right reveal theme-dark>
     <f7-view>
       <f7-page>
         <f7-navbar title="Right panel"></f7-navbar>
-        <f7-block>Right panel content goes here</f7-block>
+ content goes here</f7-block>
       </f7-page>
     </f7-view>
-  </f7-panel>
+  </f7-panel> -->
 
 
   <!-- Your main view, should have "view-main" class -->
   <f7-view main class="safe-areas" url="/"></f7-view>
 
 
-  <!-- Popup -->
+  <!-- Popup
   <f7-popup id="my-popup">
     <f7-view>
       <f7-page>
@@ -52,7 +52,7 @@
         </f7-block>
       </f7-page>
     </f7-view>
-  </f7-popup>
+  </f7-popup> -->
 
   <f7-login-screen id="my-login-screen">
     <f7-view>
@@ -77,7 +77,7 @@
         <f7-list>
           <f7-list-button title="Sign In" @click="alertLoginData"></f7-list-button>
           <f7-block-footer>
-            Some text about login information.<br>Click "Sign In" to close Login Screen
+            Enter login information to use app.<br>Click "Sign In" to enter your account
           </f7-block-footer>
         </f7-list>
       </f7-page>
@@ -123,7 +123,7 @@
     },
     methods: {
       alertLoginData() {
-        this.$f7.dialog.alert('Username: ' + this.username + '<br>Password: ' + this.password, () => {
+        this.$f7.dialog.alert('Welcome ' + this.username + '!' + '<br>Start uploading your data' , () => {
           this.$f7.loginScreen.close();
         });
       }
